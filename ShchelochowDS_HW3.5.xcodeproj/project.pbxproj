@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		18655D0C261EDA79001E0B69 /* ShchelochowDS_HW3_5App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18655D0B261EDA79001E0B69 /* ShchelochowDS_HW3_5App.swift */; };
-		18655D0E261EDA79001E0B69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18655D0D261EDA79001E0B69 /* ContentView.swift */; };
+		18655D0E261EDA79001E0B69 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18655D0D261EDA79001E0B69 /* ContactList.swift */; };
 		18655D10261EDA7B001E0B69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18655D0F261EDA7B001E0B69 /* Assets.xcassets */; };
 		18655D13261EDA7B001E0B69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18655D12261EDA7B001E0B69 /* Preview Assets.xcassets */; };
+		18655D1C261EDB17001E0B69 /* NumbersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18655D1B261EDB17001E0B69 /* NumbersList.swift */; };
+		18655D20261EDB51001E0B69 /* DetailContactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18655D1F261EDB51001E0B69 /* DetailContactInfo.swift */; };
+		18655D23261EDB8D001E0B69 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18655D22261EDB8D001E0B69 /* Person.swift */; };
+		18655D26261EDB9E001E0B69 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18655D25261EDB9E001E0B69 /* DataManager.swift */; };
+		18655D30261EFCDC001E0B69 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18655D2F261EFCDC001E0B69 /* InitialView.swift */; };
+		18655D37261F17F6001E0B69 /* CustomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18655D36261F17F6001E0B69 /* CustomRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18655D08261EDA79001E0B69 /* ShchelochowDS_HW3.5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShchelochowDS_HW3.5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18655D0B261EDA79001E0B69 /* ShchelochowDS_HW3_5App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShchelochowDS_HW3_5App.swift; sourceTree = "<group>"; };
-		18655D0D261EDA79001E0B69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18655D0D261EDA79001E0B69 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		18655D0F261EDA7B001E0B69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18655D12261EDA7B001E0B69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18655D14261EDA7B001E0B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18655D1B261EDB17001E0B69 /* NumbersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersList.swift; sourceTree = "<group>"; };
+		18655D1F261EDB51001E0B69 /* DetailContactInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactInfo.swift; sourceTree = "<group>"; };
+		18655D22261EDB8D001E0B69 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		18655D25261EDB9E001E0B69 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		18655D2F261EFCDC001E0B69 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		18655D36261F17F6001E0B69 /* CustomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				18655D0B261EDA79001E0B69 /* ShchelochowDS_HW3_5App.swift */,
-				18655D0D261EDA79001E0B69 /* ContentView.swift */,
+				18655D2C261EE1BD001E0B69 /* View */,
+				18655D29261EE198001E0B69 /* Model */,
+				18655D2A261EE1A7001E0B69 /* ModelView */,
 				18655D0F261EDA7B001E0B69 /* Assets.xcassets */,
 				18655D14261EDA7B001E0B69 /* Info.plist */,
 				18655D11261EDA7B001E0B69 /* Preview Content */,
@@ -67,6 +81,34 @@
 				18655D12261EDA7B001E0B69 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18655D29261EE198001E0B69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18655D22261EDB8D001E0B69 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18655D2A261EE1A7001E0B69 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				18655D25261EDB9E001E0B69 /* DataManager.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		18655D2C261EE1BD001E0B69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18655D2F261EFCDC001E0B69 /* InitialView.swift */,
+				18655D0D261EDA79001E0B69 /* ContactList.swift */,
+				18655D1B261EDB17001E0B69 /* NumbersList.swift */,
+				18655D1F261EDB51001E0B69 /* DetailContactInfo.swift */,
+				18655D36261F17F6001E0B69 /* CustomRow.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18655D0E261EDA79001E0B69 /* ContentView.swift in Sources */,
+				18655D26261EDB9E001E0B69 /* DataManager.swift in Sources */,
+				18655D23261EDB8D001E0B69 /* Person.swift in Sources */,
+				18655D0E261EDA79001E0B69 /* ContactList.swift in Sources */,
+				18655D20261EDB51001E0B69 /* DetailContactInfo.swift in Sources */,
+				18655D30261EFCDC001E0B69 /* InitialView.swift in Sources */,
+				18655D37261F17F6001E0B69 /* CustomRow.swift in Sources */,
 				18655D0C261EDA79001E0B69 /* ShchelochowDS_HW3_5App.swift in Sources */,
+				18655D1C261EDB17001E0B69 /* NumbersList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
