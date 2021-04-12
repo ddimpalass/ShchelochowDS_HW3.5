@@ -17,4 +17,25 @@ struct Person: Identifiable {
     var fullName: String {
         "\(name) \(surname)"
     }
+    
+    static func createContactList() -> [Person] {
+        var persons: [Person] = []
+        
+        
+        
+        let nameArrayShuffled = DataManager.shared.nameArray.shuffled()
+        let surnameArrayShuffled = DataManager.shared.surnameArray.shuffled()
+        let numberArrayShuffled = DataManager.shared.numberArray.shuffled()
+        let emailArrayShuffled = DataManager.shared.emailArray.shuffled()
+        
+        for index in 0..<nameArrayShuffled.count {
+            persons.append(Person(name: nameArrayShuffled[index],
+                                  surname: surnameArrayShuffled[index],
+                                  number: numberArrayShuffled[index],
+                                  email: emailArrayShuffled[index])
+            )
+        }
+        
+        return persons
+    }
 }

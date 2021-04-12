@@ -11,7 +11,7 @@ struct DetailContactInfo: View {
     let person: Person
         
     var body: some View {
-        List {
+        Form {
             HStack() {
                 Spacer()
                 Image(systemName: "person.fill")
@@ -29,6 +29,6 @@ struct DetailContactInfo: View {
 
 struct DetailContactInfo_Previews: PreviewProvider {
     static var previews: some View {
-        DetailContactInfo(person: Person(name: "Имя", surname: "Фамилия", number: "89999999999", email: "email@email.ru"))
+        DetailContactInfo(person: Person.createContactList().first!)
     }
 }

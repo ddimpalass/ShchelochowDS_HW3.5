@@ -11,19 +11,23 @@ struct NumbersList: View {
     let persons: [Person]
     
     var body: some View {
-        List {
-            ForEach(persons) { person in
-                Section(header: Text(person.fullName)) {
-                    CustomRow(imageSystemName: "phone", text: person.number)
-                    CustomRow(imageSystemName: "tray", text: person.email)
+        NavigationView {
+            List {
+                ForEach(persons) { person in
+                    Section(header: Text(person.fullName)) {
+                        CustomRow(imageSystemName: "phone", text: person.number)
+                        CustomRow(imageSystemName: "tray", text: person.email)
+                    }
                 }
+                .textCase(.none)
             }
+            .navigationTitle("Contact List")
         }
     }
 }
 
 struct NumbersList_Previews: PreviewProvider {
     static var previews: some View {
-        NumbersList(persons: [])
+        NumbersList(persons: Person.createContactList())
     }
 }

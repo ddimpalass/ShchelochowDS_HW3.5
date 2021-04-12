@@ -67,7 +67,7 @@
 				18655D0B261EDA79001E0B69 /* ShchelochowDS_HW3_5App.swift */,
 				18655D2C261EE1BD001E0B69 /* View */,
 				18655D29261EE198001E0B69 /* Model */,
-				18655D2A261EE1A7001E0B69 /* ModelView */,
+				18655D2A261EE1A7001E0B69 /* Manager */,
 				18655D0F261EDA7B001E0B69 /* Assets.xcassets */,
 				18655D14261EDA7B001E0B69 /* Info.plist */,
 				18655D11261EDA7B001E0B69 /* Preview Content */,
@@ -91,12 +91,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		18655D2A261EE1A7001E0B69 /* ModelView */ = {
+		18655D2A261EE1A7001E0B69 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
 				18655D25261EDB9E001E0B69 /* DataManager.swift */,
 			);
-			path = ModelView;
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		18655D2C261EE1BD001E0B69 /* View */ = {

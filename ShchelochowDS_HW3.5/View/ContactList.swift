@@ -11,16 +11,19 @@ struct ContactList: View {
     let persons: [Person]
     
     var body: some View {
-        List(persons) { person in
-            NavigationLink(destination: DetailContactInfo(person: person)){
-                Text("\(person.fullName)")
+        NavigationView {
+            List(persons) { person in
+                NavigationLink(destination: DetailContactInfo(person: person)){
+                    Text("\(person.fullName)")
+                }
             }
+            .navigationTitle("Contact List")
         }
     }
 }
 
 struct ContactList_Previews: PreviewProvider {
     static var previews: some View {
-        ContactList(persons: [])
+        ContactList(persons: Person.createContactList())
     }
 }

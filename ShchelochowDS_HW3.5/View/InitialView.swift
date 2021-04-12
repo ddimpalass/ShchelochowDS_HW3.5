@@ -8,34 +8,20 @@
 import SwiftUI
 
 struct InitialView: View {
-    @State private var selection = 0
-    
-    let persons = DataManager.createContactList()
-    
-    init() {
-        UITableView.appearance().backgroundColor = .systemFill
-    }
+    let persons = Person.createContactList()
     
     var body: some View {
-        TabView(selection: $selection) {
-            NavigationView {
-                ContactList(persons: persons)
-                    .tag(0)
-                    .navigationTitle("Contact List")
-            }
-            .tabItem {
-                Image(systemName: "person.3")
-                Text("Contacts")
-            }
-            NavigationView {
-                NumbersList(persons: persons)
-                    .tag(1)
-                    .navigationTitle("Contact List")
-            }
-            .tabItem {
-                Image(systemName: "phone")
-                Text("Numbers")
-            }
+        TabView {
+            ContactList(persons: persons)
+                .tabItem {
+                    Image(systemName: "person.3")
+                    Text("Contacts")
+                }
+            NumbersList(persons: persons)
+                .tabItem {
+                    Image(systemName: "phone")
+                    Text("Numbers")
+                }
         }
     }
 }
